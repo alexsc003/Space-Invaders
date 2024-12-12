@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuPrincipal : MonoBehaviour
 {
     [SerializeField]
-    GameObject menuPrincipal;
+    GameObject menuPrincipal, menuSeleccion;
     
     void Start()
     {
@@ -17,13 +17,12 @@ public class MenuPrincipal : MonoBehaviour
     {
         
     }
-    void Jugar()
+    public void Jugar()
     {
         if(menuPrincipal.activeSelf) 
         {
             menuPrincipal.SetActive(false);
-            juegoActivo.SetActive(true);
+            menuSeleccion.SetActive(true);
         }
-        if (menuPrincipal != null) {
     }
 }
